@@ -3,9 +3,13 @@ package es.upm.grise.profundizacion.subscriptionService;
 public class User {
 	
 	// Some implementation details are not yet complete
-	String email;
-	Delivery delivery;
+	private String email;
+	private Delivery delivery;
 	
+	public User(String email, Delivery delivery) {
+		this.email = email;
+		this.delivery = delivery;
+	}
 	
 	public String getEmail() {
 		return email;
