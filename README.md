@@ -1,2 +1,1 @@
-# SubscriptionService
-Complete code for the SubscriptionService task - Testing Bias experiment
+DANIEL ISAI CHIRIBOGA ZURITA
