@@ -1,5 +1,5 @@
 package es.upm.grise.profundizacion.subscriptionService;
-
+//null exception
 public class NullUserException extends RuntimeException {
 	
 	public NullUserException() {
