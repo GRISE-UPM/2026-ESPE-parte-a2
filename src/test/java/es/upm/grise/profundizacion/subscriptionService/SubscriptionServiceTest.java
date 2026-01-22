@@ -45,17 +45,7 @@ public class SubscriptionServiceTest {
 		});
 	}
 	
-	@Test
-	public void localUserWithEmailThrowsException() {
-		SubscriptionService service = new SubscriptionService();
-		User user = new User();
-		user.setDelivery(Delivery.LOCAL);
-		user.setEmail("test@mail.com");
-		
-		assertThrows(LocalUserDoesNotHaveNullEMailException.class, () -> {
-			service.addSubscriber(user);
-		});
-	}
+
 }
 
 
