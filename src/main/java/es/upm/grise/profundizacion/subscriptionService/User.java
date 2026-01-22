@@ -6,7 +6,11 @@ public class User {
 	String email;
 	Delivery delivery;
 	
-	
+	public User(String email, Delivery delivery) {
+        this.email = email;
+        this.delivery = delivery;
+    }
+
 	public String getEmail() {
 		return email;
 	}
