@@ -6,5 +6,6 @@ public class SubscriptionServiceTest {
 	
 	@Test
 	public void smokeTest() {}
+
 	
 }
