@@ -1,8 +1,7 @@
 package es.upm.grise.profundizacion.subscriptionService;
 
 public class User {
-	
-	// Some implementation details are not yet complete
+
 	String email;
 	Delivery delivery;
 	

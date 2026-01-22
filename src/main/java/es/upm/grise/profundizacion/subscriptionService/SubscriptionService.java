@@ -18,23 +18,19 @@ public class SubscriptionService {
 	 * Method to code / test
 	 */
 	public void addSubscriber(User user) {
-		
-		// Regla 1: user null
+
 		if (user == null) {
 			throw new NullUserException();
 		}
-		
-		// Regla 2: usuario ya suscrito
+
 		if (subscribers.contains(user)) {
 			throw new ExistingUserException();
 		}
-		
-		// Regla 3: LOCAL → email debe ser null
+
 		if (user.getDelivery() == Delivery.LOCAL && user.getEmail() != null) {
 			throw new LocalUserDoesNotHaveNullEMailException();
 		}
-		
-		// Añadir usuario
+
 		subscribers.add(user);
 	}
 	
