@@ -1,5 +1,6 @@
 package es.upm.grise.profundizacion.subscriptionService;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 public class SubscriptionService {
@@ -9,9 +10,13 @@ public class SubscriptionService {
 	/*
 	 * Constructor
 	 */
-	public SubscriptionService() {}
-	
-	
+	public SubscriptionService() {
+    this.subscribers = new ArrayList<>();
+	}
+	public void setSubscribers(Collection<User> subscribers) {
+		this.subscribers = subscribers;
+	}
+
 
 	/*
 	 * Method to code / test
